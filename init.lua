@@ -93,6 +93,10 @@ vim.keymap.set('n', '<C-V>', '<C-v>')
 vim.keymap.set({ 'n', 'v' }, '<leader>y', [["+y]])
 vim.keymap.set('n', '<leader>Y', [["+Y]])
 
+vim.keymap.set('n', '<leader>p', function()
+  vim.cmd 'Git push'
+end)
+
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 -- vim.opt.hlsearch = true
 -- vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
