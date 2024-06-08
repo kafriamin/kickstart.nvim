@@ -76,6 +76,7 @@ vim.opt.scrolloff = 10
 vim.opt.guicursor = ''
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
+vim.opt.termguicolors = true
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
@@ -834,6 +835,7 @@ require('lazy').setup({
       vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle)
     end,
   },
+  { 'xiyaowong/transparent.nvim' },
   { import = 'custom.plugins' },
 }, {
   ui = {
